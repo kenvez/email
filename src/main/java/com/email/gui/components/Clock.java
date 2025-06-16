@@ -10,9 +10,7 @@ public class Clock extends JLabel {
         Font clockFont = new Font("Sans-serif", Font.BOLD, 24);
 
         setFont(clockFont);
-    }
 
-    public void display() {
         Thread clock = new Thread(() -> {
             while (true) {
                 try {
